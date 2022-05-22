@@ -5,13 +5,26 @@ var both = 0;
 var counter = 0;
 var currentBlocks = [];
 
-function moveLeft(){
-    var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
-    if(left > 0){character.style.left = left - 2 + "px";}
+function cursorMove(event){
+    var left = event.clientX - 780;
+    if(left > 0 && left < 380) {
+        character.style.left = left + "px";
+    } else if(left <= 0) {
+        character.style.left = 0 + "px";
+    } else if(left >= 390) {
+        character.style.left = 380 + "px";
+    }
 }
 
-function moveRight(event){
-    character.style.left = event.clientX - 770 + "px";
+function touchMove(event){
+    var left = event.touches[0].clientX;
+    if(left > 0 && left < 380) {
+        character.style.left = left + "px";
+    } else if(left <= 0) {
+        character.style.left = 0 + "px";
+    } else if(left >= 390) {
+        character.style.left = 380 + "px";
+    }
 }
 
 document.addEventListener("keydown", event => {
