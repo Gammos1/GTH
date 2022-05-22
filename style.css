@@ -2,7 +2,7 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 .title {
-    font-size: 5em;
+    font-size: 2em;
     color: rgb(77, 77, 77);
     text-align: center;
     text-decoration: none;
@@ -13,11 +13,12 @@ header {
 }
 
 hr {
-    width: 12.5%;
+    width: 5%;
 }
 
 .navbar {
     margin-left: 43%;
+    font-size: 15px;
 }
 
 ul {
