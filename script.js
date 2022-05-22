@@ -4,8 +4,10 @@ var interval;
 var both = 0;
 var counter = 0;
 var currentBlocks = [];
+var speed = 0;
 
 function cursorMove(event){
+    speed = 1;
     var left = event.clientX - 780;
     if(left > 0 && left < 280) {
         character.style.left = left + "px";
@@ -17,6 +19,7 @@ function cursorMove(event){
 }
 
 function touchMove(event){
+    speed = 2;
     var left = event.touches[0].clientX;
     if(left > 0 && left < 280) {
         character.style.left = left + "px";
@@ -80,8 +83,8 @@ var blocks = setInterval(function(){
         let ihole = document.getElementById("hole"+current);
         let iblockTop = parseFloat(window.getComputedStyle(iblock).getPropertyValue("top"));
         let iholeLeft = parseFloat(window.getComputedStyle(ihole).getPropertyValue("left"));
-        iblock.style.top = iblockTop - 0.5 + "px";
-        ihole.style.top = iblockTop - 0.5 + "px";
+        iblock.style.top = iblockTop - 0.5 * speed + "px";
+        ihole.style.top = iblockTop - 0.5 * speed + "px";
         if(iblockTop < -20){
             currentBlocks.shift();
             iblock.remove();
