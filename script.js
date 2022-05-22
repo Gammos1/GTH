@@ -10,9 +10,8 @@ function moveLeft(){
     if(left > 0){character.style.left = left - 2 + "px";}
 }
 
-function moveRight(){
-    var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
-    if(left < 380){character.style.left = left + 2 + "px";}
+function moveRight(event){
+    character.style.left = event.clientX - 770 + "px";
 }
 
 document.addEventListener("keydown", event => {
