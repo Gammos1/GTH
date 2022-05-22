@@ -5,6 +5,11 @@ var both = 0;
 var counter = 0;
 var currentBlocks = [];
 var speed = 0;
+var score_num = 0;
+var score = document.getElementById("score");
+var lastScore_txt = document.getElementById("lastscore");
+var lastScore = 0;
+var stuff = 0;
 
 function cursorMove(event){
     speed = 1;
@@ -69,13 +74,17 @@ var blocks = setInterval(function(){
         game.appendChild(hole);
         currentBlocks.push(counter);
         counter++;
+        score_num++;
     }
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     var drop = 0;
     if(characterTop <= 0){
-        clearInterval(blocks);
-        location.reload();
+        score_num = 0
+        score.innerHTML = "Score: " + 0;
+        lastScore_txt.innerHTML = "Highscore: " + lastScore;
+        character.style.top = 440 + "px";
+        characterTop = 440;
     }
     for(var i = 0; i < currentBlocks.length; i++){
         let current = currentBlocks[i];
@@ -85,17 +94,19 @@ var blocks = setInterval(function(){
         let iholeLeft = parseFloat(window.getComputedStyle(ihole).getPropertyValue("left"));
         iblock.style.top = iblockTop - 0.5 * speed + "px";
         ihole.style.top = iblockTop - 0.5 * speed + "px";
-        if(iblockTop < -20){
+        if(iblockTop < 0){
             currentBlocks.shift();
             iblock.remove();
             ihole.remove();
         }
-        if(iblockTop-20 < characterTop && iblockTop > characterTop){
+        if(iblockTop-25 < characterTop && iblockTop > characterTop){
             drop++;
             if(iholeLeft <= characterLeft && iholeLeft+20 >= characterLeft){
                 drop = 0;
             }
         }
+        if(lastScore < score_num) {lastScore = score_num;}
+        score.innerHTML = "Score: " + score_num;
     }
     if(drop==0){
         if(characterTop < 480){

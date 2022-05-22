@@ -69,8 +69,8 @@ li a:hover {
     height: 20px;
     background-color: black;
     position: relative;
-    top: 100px;
-    margin-top: -20px;
+    top: 300px;
+    margin-top: -23px;
 }
 .hole{
     width: 40px;
@@ -81,3 +81,14 @@ li a:hover {
     margin-top: -20px;
 }
 
+#score{
+    position: relative;
+    top: 100px;
+    left: 70%;
+}
+
+#lastscore{
+    position: relative;
+    top: 100px;
+    left: 70%;
+}
