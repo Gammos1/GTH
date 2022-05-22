@@ -7,23 +7,23 @@ var currentBlocks = [];
 
 function cursorMove(event){
     var left = event.clientX - 780;
-    if(left > 0 && left < 380) {
+    if(left > 0 && left < 280) {
         character.style.left = left + "px";
     } else if(left <= 0) {
         character.style.left = 0 + "px";
-    } else if(left >= 390) {
-        character.style.left = 380 + "px";
+    } else if(left >= 280) {
+        character.style.left = 280 + "px";
     }
 }
 
 function touchMove(event){
     var left = event.touches[0].clientX;
-    if(left > 0 && left < 380) {
+    if(left > 0 && left < 280) {
         character.style.left = left + "px";
     } else if(left <= 0) {
         character.style.left = 0 + "px";
-    } else if(left >= 390) {
-        character.style.left = 380 + "px";
+    } else if(left >= 280) {
+        character.style.left = 280 + "px";
     }
 }
 
@@ -60,7 +60,7 @@ var blocks = setInterval(function(){
         hole.setAttribute("id", "hole"+counter);
         block.style.top = blockLastTop + 100 + "px";
         hole.style.top = holeLastTop + 100 + "px";
-        var random = Math.floor(Math.random() * 280) + 50;
+        var random = Math.floor(Math.random() * 200) + 50;
         hole.style.left = random + "px";
         game.appendChild(block);
         game.appendChild(hole);
