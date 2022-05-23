@@ -13,7 +13,7 @@ var stuff = 0;
 
 function cursorMove(event){
     speed = 1;
-    var left = event.clientX - 780;
+    var left = event.clientX - 25;
     if(left > 0 && left < 280) {
         character.style.left = left + "px";
     } else if(left <= 0) {

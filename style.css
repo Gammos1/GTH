@@ -49,13 +49,25 @@ li a:hover {
     text-decoration: underline;
 }
 
-body{background-color: black;}
+#iframe1{
+    position: relative;
+    left: 41%;
+}
+
+#iframe2{
+    position: relative;
+    left: 30%;
+    top: -400px;
+}
+
 #white{
     background-color: white;
     height: 1000px;
 }
 #game{
-    margin: auto;
+    position: relative;
+    top: -26px;
+    left: -2px;
     width: 300px;
     height: 500px;
     border: 5px solid black;
@@ -89,21 +101,14 @@ body{background-color: black;}
 
 #score{
     position: relative;
-    top: 100px;
-    left: 70%;
+    top: 20px;
+    left: 26%;
 }
 
 #lastscore{
     position: relative;
-    top: 100px;
-    left: 70%;
-}
-
-#black{
-    margin-top: 115px;
-    height: 1000px;
-    width: 100%;
-    background-color: black;
+    top: 50px;
+    left: 21%;
 }
 
 @font-face {
@@ -112,8 +117,8 @@ body{background-color: black;}
 }
 
 #title{
+    text-align: center;
     position: relative;
-    top: 100px;
     font-family: title;
     text-align: center;
     font-size: 100px;
@@ -122,12 +127,9 @@ body{background-color: black;}
 
 #game2{
     position: relative;
-    top: 100px;
-    margin: auto;
-    margin-top: 20px;
     width: 800px;
     height: 500px;
-    border: 20px solid white;
+    border: 20px solid black;
     border-radius: 1%;
 }
 #character2{
