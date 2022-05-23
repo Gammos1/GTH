@@ -116,3 +116,66 @@ var blocks = setInterval(function(){
         character.style.top = characterTop - 0.5 + "px";
     }
 },1);
+
+
+var character2 = document.getElementById("character2");
+var game2 = document.getElementById("game2");
+
+document.addEventListener("keydown", event => {
+        if(event.key === "a") {
+            move(character2, "left", 5);
+            both++;
+        } 
+        if(event.key === "d") {
+            move(character2, "right", 5);
+        }
+        if(event.key === "w") {
+            move(character2, "up", 5);
+        }
+        if(event.key === "s") {
+            move(character2, "down", 5);
+        }
+});
+
+
+
+function move(e, dir, d) {
+    switch(dir) {
+        case "left":
+            var interval = setInterval(function() {
+                var left = parseInt(window.getComputedStyle(e).getPropertyValue("left"));
+                if(left > 0){e.style.left = left - d + "px";}
+                document.addEventListener("keyup", event => {
+                    clearInterval(interval);
+                });
+            },1);
+        break;
+        case "right":
+            var interval = setInterval(function() {
+                var left = parseInt(window.getComputedStyle(e).getPropertyValue("left"));
+                if(left < 770){e.style.left = left + d + "px";}
+                document.addEventListener("keyup", event => {
+                    clearInterval(interval);
+                });
+            },1);
+        break;
+        case "up":
+            var interval = setInterval(function() {
+                var top = parseInt(window.getComputedStyle(e).getPropertyValue("top"));
+                if(top > 0){e.style.top = top - d + "px";}
+                document.addEventListener("keyup", event => {
+                    clearInterval(interval);
+                });
+            },1);
+        break;
+        case "down":
+            var interval = setInterval(function() {
+                var top = parseInt(window.getComputedStyle(e).getPropertyValue("top"));
+                if(top < 470){e.style.top = top + d + "px";}
+                document.addEventListener("keyup", event => {
+                    clearInterval(interval);
+                });
+            },1);
+        break;
+    }
+}

@@ -10,6 +10,7 @@
 
 header {
     text-align: center;
+    background-color: white;
 }
 
 hr {
@@ -48,6 +49,11 @@ li a:hover {
     text-decoration: underline;
 }
 
+body{background-color: black;}
+#white{
+    background-color: white;
+    height: 1000px;
+}
 #game{
     margin: auto;
     width: 300px;
@@ -91,4 +97,49 @@ li a:hover {
     position: relative;
     top: 100px;
     left: 70%;
+}
+
+#black{
+    margin-top: 115px;
+    height: 1000px;
+    width: 100%;
+    background-color: black;
+}
+
+@font-face {
+    font-family: title;
+    src: url(SairaSemiCondensed-Bold.ttf);
+}
+
+#title{
+    position: relative;
+    top: 100px;
+    font-family: title;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+#game2{
+    position: relative;
+    top: 100px;
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    height: 500px;
+    border: 20px solid white;
+    border-radius: 1%;
+}
+#character2{
+    width: 30px;
+    height: 30px;
+    background-color: #1d9e33;
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    left: 400px;
+    z-index: 1;
+}
+a{
+    width:100px;
 }
