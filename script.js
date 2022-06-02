@@ -12,7 +12,7 @@ var lastScore = 0;
 var stuff = 0;
 
 function cursorMove(event){
-    speed = 1;
+    speed = 3;
     var left = event.clientX - 25;
     if(left > 0 && left < 280) {
         character.style.left = left + "px";
