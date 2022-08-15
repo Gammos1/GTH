@@ -1,0 +1,78 @@
+* {
+    font-family: Monaco, Arial, Monospace;
+    color: rgb(77, 77, 77);
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background-color: rgb(245, 245, 245);
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#logo_png {
+    border: none;
+    border-radius: 999px;
+    margin-left: 10px;
+    float: left;
+}
+
+#logo_text {
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: bold
+}
+
+.logo a {
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+#logo_text {
+    margin-left: -35px;
+}
+
+#menu_home {
+    margin-left: 30px;
+}
+
+.menu {
+    margin-left: 25px;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    transform-origin: center;
+    animation: 200ms ease-in-out forwards;
+    transition: 200ms;
+    scale: 1.0;
+    float: right;
+    margin-right: 50px;
+}
+
+.socials:hover {
+    transform-origin: center;
+    animation: 200ms ease-in-out forwards;
+    scale: 1.2;
+}
+
+.buttons{
+    padding-top: 10px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
