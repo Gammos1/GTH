@@ -45,6 +45,7 @@ header{
 
 .menu {
     margin-left: 25px;
+    text-decoration: none;
 }
 
 .menu:hover {
@@ -75,11 +76,9 @@ header{
 }
 
 .headline{
-    margin: auto;
-    width: 100px;
-    height: 50px;
+    text-align: center;
+    width: 100%;
     margin-top: 100px;
-    text-decoration: underline;
 }
 
 
@@ -92,7 +91,7 @@ header{
     width: 700px;
     height: 250px;
     background-color: rgb(217, 217, 217);
-    margin-top: 50px;
+    margin-top: 100px;
     border: rgb(217, 217, 217) solid;
     border-radius: 7px;
     box-shadow: 10px 10px 50px 20px grey;
@@ -122,10 +121,19 @@ header{
     margin-left: 20px;
 }
 
-.project_box p{
+.desc{
     margin-left: 350px;
     margin-top: 60px;
     font-size: 15px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+.project_stats{
+    float: right;
+    margin-right: 18px;
+    margin-top: 58px;
+    font-size: 12px;
     text-decoration: none;
     font-weight: light;
 }
@@ -143,4 +151,8 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+#selected_page{
+    text-decoration: underline;
 }
