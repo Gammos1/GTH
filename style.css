@@ -122,3 +122,9 @@ header{
     text-decoration: none;
     font-weight: light;
 }
+
+@media (max-width: 1086px){
+    .socials{
+        height: 0px;
+    }
+}
