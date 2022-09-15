@@ -132,12 +132,6 @@ header{
     font-weight: light;
 }
 
-@media (max-width: 1086px){
-    .socials{
-        height: 0px;
-    }
-}
-
 .link_lvlup{
     position: absolute;
     width: 100%;
