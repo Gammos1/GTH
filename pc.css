@@ -78,6 +78,7 @@ header{
     width: 100%;
     margin-top: 100px;
 }
+
 #winged{
     transition: 200ms;
     scale: 1.0;
@@ -106,7 +107,12 @@ header{
     box-shadow: 10px 10px 50px 1px grey;
 }
 
-.project_box:hover {
+#winged:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+#lvlup:hover {
     transform-origin: center;
     scale: 1.05;
 }
