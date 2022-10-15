@@ -86,7 +86,7 @@ header{
     margin: auto;
     width: 700px;
     height: 250px;
-    background-color: #a611fe;
+    background-color: rgb(237, 237, 237);
     margin-top: 100px;
     border: rgb(237, 237, 237) solid;
     border-radius: 15px;
@@ -163,7 +163,6 @@ header{
 }
 
 #winged .desc{
-    color: white;
     margin-left: 350px;
     margin-top: 60px;
     font-size: 15px;
@@ -181,7 +180,6 @@ header{
 }
 
 #winged .project_stats{
-    color: white;
     float: right;
     margin-right: 18px;
     margin-top: 110px;
