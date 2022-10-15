@@ -10,12 +10,15 @@
 </head>
 
 <script>
+    if(window.innerWidth <= 1280){
+            window.location = "mobile.html"
+            }
     window.addEventListener('resize', function(event) {
-        if(window.innerWidth <= 1272){
-                window.location = "projects_mobile.html"
+        if(window.innerWidth <= 1280){
+                window.location = "mobile.html"
             }
         else{
-            window.location = "projects_pc.html"
+            window.location = "home.html"
         }
     }, true);
 </script>
@@ -27,7 +30,7 @@
             <div class="buttons">
                 <a id="logo_text" href="index.html" style="text-decoration: none;">Gammos</a>
                 <a class="menu" id="menu_home" href="index.html">Home</a>
-                <a class="menu" href="projects.html" id="selected_page">Projects</a>
+                <a class="menu" href="projects.html">Projects</a>
                 <a class="menu" href="#">About</a>
                 <a href="https://discord.gg/5jqwmrTF7m" target="_blank"><img class="socials" src="assets/discord.png" height="35px"></a>
                 <a href="https://www.planetminecraft.com/member/gammos/" target="_blank"><img class="socials" src="assets/planetminecraft.png" height="35px"></a>
@@ -43,19 +46,23 @@
     <br>
     <br>
     <div class="headline">
-        <h1>Projects</h1>
+        <h1>New!</h1>
     </div>
     <div class="projects">
-        <div class="project_box" id="lvlup">
-            <a href="https://www.planetminecraft.com/data-pack/level-up-5434987/" target="_blank"><span class="link"></span></a>
-            <img src="assets/projects/lvlup.png" width="300">
+        <div class="project_box" id="winged">
+            <a href="https://www.eluantstudios.com#winged" target="_blank"><span class="link"></span></a>
+            <img src="assets/projects/winged.jpg" width="300">
             <div class="title">
-                    <a>Level up!</a>
+                    <a style="color: white">Winged</a>
             </div>
-            <p class="desc">This Datapack adds a little notification message in the actionbar alongside a fitting sound when you level up! <br><br>It's developed in 1.19 although it can also be used perfectly fine in 1.15 through 1.19.2.</p>
-            <p class="project_stats">Published: 27.08.2022</p>
+            <p class="desc">Grab an aircraft and soar through the cartoony tropical skies while battling it out to be the more skilled team of aviators!</p>
+            <p class="project_stats">Published: 10.10.2022</p>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>

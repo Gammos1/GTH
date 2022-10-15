@@ -8,6 +8,18 @@
     <link rel="stylesheet" type="text/css" href="mobile.css">
     <link rel="icon" type="image/png" href="assets/logo_cropped.png">
 </head>
+
+<script>
+    if(window.innerWidth > 1280){
+        window.location = "home.html"
+    }
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 1280){
+            window.location = "home.html"
+        }
+    }, true);
+</script>
+
 <header>
     <div class="header">
         <div class="logo">
