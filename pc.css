@@ -93,6 +93,20 @@ header{
     box-shadow: 10px 10px 50px 1px grey;
 }
 
+#juicy{
+    transition: 200ms;
+    scale: 1.0;
+    cursor: pointer;
+    margin: auto;
+    width: 700px;
+    height: 250px;
+    background-color: rgb(198, 199, 199);
+    margin-top: 100px;
+    border: rgb(237, 237, 237) solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 50px 1px grey;
+}
+
 #lvlup{
     transition: 200ms;
     scale: 1.0;
@@ -108,6 +122,11 @@ header{
 }
 
 #winged:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+#juicy:hover {
     transform-origin: center;
     scale: 1.05;
 }
@@ -154,6 +173,12 @@ header{
     border-radius: 7px;
 }
 
+#juicy img{
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
 #lvlup .desc{
     margin-left: 350px;
     margin-top: 60px;
@@ -163,6 +188,22 @@ header{
 }
 
 #winged .desc{
+    margin-left: 350px;
+    margin-top: 60px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#winged .desc{
+    margin-left: 350px;
+    margin-top: 60px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#juicy .desc{
     margin-left: 350px;
     margin-top: 60px;
     font-size: 15px;
@@ -183,6 +224,15 @@ header{
     float: right;
     margin-right: 18px;
     margin-top: 110px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#juicy .project_stats{
+    float: right;
+    margin-right: 18px;
+    margin-top: 75px;
     font-size: 12px;
     text-decoration: none;
     font-weight: light;
