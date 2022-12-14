@@ -124,6 +124,21 @@ header{
     box-shadow: 0px 8px 30px 0px grey;
 }
 
+#protect{
+    transition: 200ms;
+    scale: 1.0;
+    cursor: pointer;
+    margin: auto;
+    width: 250px;
+    height: 375px;
+    background-color: rgb(217, 217, 217);
+    margin-top: 100px;
+    border: rgb(217, 217, 217) solid;
+    border-radius: 7px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 30px 0px grey;
+}
+
 #winged:hover {
     transform-origin: center;
     scale: 1.05;
@@ -135,6 +150,11 @@ header{
 }
 
 #juicy:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+#protect:hover {
     transform-origin: center;
     scale: 1.05;
 }
@@ -170,6 +190,12 @@ header{
     margin-left: 50px;
     border: rgb(217, 217, 217) solid;
     border-radius: 15px;
+}
+
+#protect img{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .desc{

@@ -121,12 +121,31 @@ header{
     box-shadow: 10px 10px 50px 1px grey;
 }
 
+#protect{
+    transition: 200ms;
+    scale: 1.0;
+    cursor: pointer;
+    margin: auto;
+    width: 700px;
+    height: 250px;
+    background-color: rgb(237, 237, 237);
+    margin-top: 100px;
+    border: rgb(237, 237, 237) solid;
+    border-radius: 7px;
+    box-shadow: 10px 10px 50px 1px grey;
+}
+
 #winged:hover {
     transform-origin: center;
     scale: 1.05;
 }
 
 #juicy:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+#protect:hover {
     transform-origin: center;
     scale: 1.05;
 }
@@ -179,31 +198,13 @@ header{
     margin-left: 20px;
 }
 
-#lvlup .desc{
-    margin-left: 350px;
-    margin-top: 60px;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: light;
+#protect img{
+    float: left;
+    margin-top: 62px;
+    margin-left: 20px;
 }
 
-#winged .desc{
-    margin-left: 350px;
-    margin-top: 60px;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: light;
-}
-
-#winged .desc{
-    margin-left: 350px;
-    margin-top: 60px;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: light;
-}
-
-#juicy .desc{
+.desc{
     margin-left: 350px;
     margin-top: 60px;
     font-size: 15px;
@@ -233,6 +234,15 @@ header{
     float: right;
     margin-right: 18px;
     margin-top: 75px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#protect .project_stats{
+    float: right;
+    margin-right: 18px;
+    margin-top: 58px;
     font-size: 12px;
     text-decoration: none;
     font-weight: light;
