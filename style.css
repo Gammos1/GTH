@@ -154,3 +154,8 @@ li{
     left: 15px;
     width: 90px;
 }
+
+#resetBtn{
+    position: absolute;
+    right: 0px;
+}
