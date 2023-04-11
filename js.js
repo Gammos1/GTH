@@ -1,4 +1,7 @@
 var money = parseInt(localStorage.getItem('money'));
+if(parseInt(localStorage.getItem('money') == NaN)) {
+  money = 0;
+}
 document.getElementById("money").innerHTML = money;
 
 const fileInput = document.getElementById("input-file");
