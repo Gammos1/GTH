@@ -1,5 +1,5 @@
 var money = parseInt(localStorage.getItem('money'));
-if(money != 0) {document.getElementById("money").innerHTML = money;} else {money = 0;}
+document.getElementById("money").innerHTML = money;
 
 const fileInput = document.getElementById("input-file");
 fileInput.addEventListener("input", async (evt) => {
