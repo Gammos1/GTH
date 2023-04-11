@@ -22,3 +22,5 @@ document.getElementById("submitButton").onclick = function () {
   document.getElementById("newBox").style.visibility = "hidden";
   location.reload();
 };
+
+document.getElementById("resetBtn").onclick = function () {money = 0; localStorage.setItem('money', money);}
