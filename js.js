@@ -1,4 +1,4 @@
-var money = 0;
+var money = parseInt(localStorage.getItem('money'));
 document.getElementById("money").innerHTML = money;
 
 const fileInput = document.getElementById("input-file");
