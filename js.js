@@ -1,4 +1,4 @@
-var money = localStorage.getItem('money');
+var money = parseInt(localStorage.getItem('money'));
 if(money != 0) {document.getElementById("money").innerHTML = money;} else {money = 0;}
 
 const fileInput = document.getElementById("input-file");
@@ -21,4 +21,5 @@ document.getElementById("submitButton").onclick = function () {
   console.log("newMoney");
   document.getElementById("money").innerHTML = money;
   document.getElementById("newBox").style.visibility = "hidden";
+  location.reload();
 };
