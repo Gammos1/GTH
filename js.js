@@ -24,4 +24,4 @@ document.getElementById("submitButton").onclick = function () {
   location.reload();
 };
 
-document.getElementById("resetBtn").onclick = function () {money = 0; localStorage.setItem('money', money);}
+document.getElementById("resetBtn").onclick = function () {money = 0; localStorage.setItem('money', money); location.refresh();}
