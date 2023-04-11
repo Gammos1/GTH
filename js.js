@@ -1,7 +1,6 @@
 var money = localStorage.getItem('money');
 if(money != 0) {document.getElementById("money").innerHTML = money;} else {money = 0;}
 
-
 const fileInput = document.getElementById("input-file");
 fileInput.addEventListener("input", async (evt) => {
   const [ file ] = fileInput.files;
