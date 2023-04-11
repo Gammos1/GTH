@@ -13,12 +13,12 @@ fileInput.addEventListener("input", async (evt) => {
   document.getElementById("newBox").style.visibility = "visible";
 });
 
-// document.getElementById("submitButton").onclick = function () {
-//   money = money + parseInt(document.getElementById("lohn").value);
-//   localStorage.setItem('money', money);
-//   console.log(money);
-//   console.log("newMoney");
-//   document.getElementById("money").innerHTML = money;
-//   document.getElementById("newBox").style.visibility = "hidden";
-//   location.reload();
-// };
+document.getElementById("submitButton").onclick = function () {
+  money = money + parseInt(document.getElementById("lohn").value);
+  localStorage.setItem('money', money);
+  console.log(money);
+  console.log("newMoney");
+  document.getElementById("money").innerHTML = money;
+  document.getElementById("newBox").style.visibility = "hidden";
+  location.reload();
+};
