@@ -19,5 +19,5 @@ document.getElementById("submitButton").onclick = function () {
   localStorage.setItem('money', money);
   console.log(money);
   console.log("newMoney");
-  document.getElementById("money").innerHTML = money + " €";
+  document.getElementById("money").innerHTML = money;
 };
