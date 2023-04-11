@@ -14,9 +14,10 @@ fileInput.addEventListener("input", async (evt) => {
   document.getElementById("newBox").style.visibility = "visible";
 });
 
-document.getElementById("submitButton").onclick = function () { 
-  localStorage.setItem('money', document.getElementById("lohn").value);
-  console.log(document.getElementById("lohn").value);
-  console.log("ye");
+document.getElementById("submitButton").onclick = function () {
+  money = money + document.getElementById("lohn").value;
+  localStorage.setItem('money', money);
+  console.log(money);
+  console.log("newMoney");
   document.getElementById("money").innerHTML = money;
 };
