@@ -15,7 +15,7 @@ fileInput.addEventListener("input", async (evt) => {
 });
 
 document.getElementById("submitButton").onclick = function () {
-  money = money + parseInt(document.getElementById("lohn").value);
+  money = money + parseInt(document.getElementById("lohn").value) - parseInt(document.getElementById("ausgb").value);
   localStorage.setItem('money', money);
   console.log(money);
   console.log("newMoney");
