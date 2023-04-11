@@ -1,4 +1,4 @@
-var money = parseInt(localStorage.getItem('money'));
+var money = 0;
 document.getElementById("money").innerHTML = money;
 
 const fileInput = document.getElementById("input-file");
@@ -10,7 +10,6 @@ fileInput.addEventListener("input", async (evt) => {
   const lines = text.split(/\r?\n/);
   document.getElementById("startText").innerHTML = lines[0];
   document.getElementById("zielText").innerHTML = lines[1];
-
   document.getElementById("newBox").style.visibility = "visible";
 });
 
