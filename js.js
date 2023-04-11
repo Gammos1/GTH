@@ -21,5 +21,6 @@ document.getElementById("submitButton").onclick = function () {
   console.log(money);
   console.log("newMoney");
   document.getElementById("money").innerHTML = money;
-  // location.reload();
+  document.getElementById("newBox").style.visibility = "hidden";
+  location.reload();
 };
