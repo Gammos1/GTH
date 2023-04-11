@@ -2,7 +2,7 @@ var money = parseInt(localStorage.getItem('money'));
 if(parseInt(localStorage.getItem('money') == NaN)) {
   money = 0;
 }
-document.getElementById("money").innerHTML = money;
+document.getElementById("money").innerHTML = money.toLocaleString("en-US");
 
 const fileInput = document.getElementById("input-file");
 fileInput.addEventListener("input", async (evt) => {
@@ -22,7 +22,7 @@ document.getElementById("submitButton").onclick = function () {
   localStorage.setItem('money', money);
   console.log(money);
   console.log("newMoney");
-  document.getElementById("money").innerHTML = money;
+  document.getElementById("money").innerHTML = money.toLocaleString("en-US");
   document.getElementById("newBox").style.visibility = "hidden";
   location.reload();
 };
