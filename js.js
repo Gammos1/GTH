@@ -18,7 +18,7 @@ if(localStorage.getItem('ziels') != null) {
   ziels = localStorage.getItem('ziels');
 }
 
-for(var i = 0; i < lohns.length; i++) {
+for(var i = 0; i < starts.length; i++) {
   if(lohns[i] == "undefined") {
     i = lohns.length;
   }
@@ -48,7 +48,6 @@ fileInput.addEventListener("input", async (evt) => {
 
   const lines = text.split(/\r?\n/);
 
-  lohns.push("0");
   starts.push(lines[0]);
   ziels.push(lines[1]);
 
