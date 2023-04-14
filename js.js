@@ -48,7 +48,7 @@ fileInput.addEventListener("input", async (evt) => {
 
   const lines = text.split(/\r?\n/);
 
-  lohns.push(0);
+  lohns.push("0");
   starts.push(lines[0]);
   ziels.push(lines[1]);
 
@@ -58,7 +58,7 @@ fileInput.addEventListener("input", async (evt) => {
   console.log(lohns);
   console.log(ziels);
 
-  // location.reload();
+  location.reload();
   console.log("reload");
 
   // document.getElementById("startText").innerHTML = lines[0];
