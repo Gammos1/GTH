@@ -54,7 +54,12 @@ fileInput.addEventListener("input", async (evt) => {
   localStorage.setItem('lohns', lohns);
   localStorage.setItem('ziels', ziels);
 
-  location.reload();
+  console.log(lohns);
+  console.log(ziels);
+
+  // location.reload();
+  console.log("reload");
+
   // document.getElementById("startText").innerHTML = lines[0];
   // document.getElementById("zielText").innerHTML = lines[1];
   // document.getElementById("newBox").style.visibility = "visible";
