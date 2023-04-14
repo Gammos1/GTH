@@ -49,7 +49,6 @@ fileInput.addEventListener("input", async (evt) => {
   const lines = text.split(/\r?\n/);
 
   starts.push(lines[0]);
-  ziels.push(lines[1]);
 
   localStorage.setItem('lohns', lohns);
   localStorage.setItem('ziels', ziels);
