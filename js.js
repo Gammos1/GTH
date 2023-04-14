@@ -48,6 +48,7 @@ fileInput.addEventListener("input", async (evt) => {
 
   const lines = text.split(/\r?\n/);
 
+  lohns.push(0);
   starts.push(lines[0]);
   ziels.push(lines[1]);
 
