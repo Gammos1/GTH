@@ -83,7 +83,7 @@ li{
     left: 500px;
     top: 100px;
     visibility: hidden;
-    width: 270px;
+    width: 350px;
     height: 150px;
     background-color:rgb(151, 9, 9);
     border-radius: 5px;
@@ -104,7 +104,7 @@ li{
 #startText{
     position: absolute;
     left: 120px;
-    width: 100px;
+    width: 120px;
 }
 
 #zielBox{
@@ -117,7 +117,7 @@ li{
 #zielText{
     position: absolute;
     left: 120px;
-    width: 50px;
+    width: 120px;
 }
 
 #lohnBox{
