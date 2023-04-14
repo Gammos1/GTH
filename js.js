@@ -49,11 +49,14 @@ fileInput.addEventListener("input", async (evt) => {
   const lines = text.split(/\r?\n/);
 
   starts.push(lines[0]);
+  ziels.push(lines[1]);
 
   localStorage.setItem('lohns', lohns);
+  localStorage.setItem('starts', starts);
   localStorage.setItem('ziels', ziels);
 
   console.log(lohns);
+  console.log(starts);
   console.log(ziels);
 
   location.reload();
