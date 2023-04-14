@@ -9,13 +9,13 @@ let starts = new Array(0);
 let ziels = new Array(0);
 
 if(localStorage.getItem('lohns') != null) {
-  let lohnts = localStorage.getItem('lohns');
+  lohns = localStorage.getItem('lohns');
 }
 if(localStorage.getItem('starts') != null) {
-  let lohnts = localStorage.getItem('starts');
+  starts = localStorage.getItem('starts');
 }
 if(localStorage.getItem('ziels') != null) {
-  let lohnts = localStorage.getItem('ziels');
+  ziels = localStorage.getItem('ziels');
 }
 
 for(var i = 0; i < lohns.length; i++) {
