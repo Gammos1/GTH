@@ -24,6 +24,7 @@ li{
     padding: 5px;
     background-color: rgb(80, 101, 168);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #logo{
@@ -33,9 +34,12 @@ li{
     background-color: rgb(80, 101, 168);
     padding: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #input-file{
+    position: absolute;
+    top: 80px;
     margin-left: 50%;
     transform: translateX(-50%);
     width: 164px;
@@ -44,19 +48,247 @@ li{
     color: black;
 }
 
+#boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .lohn{
+    vertical-align: top;
+    display: inline-block;
     justify-content: center;
     display: flex;
     max-width: max-content;
-    height: 30px;
-    border: solid rgb(80, 101, 168);
+    max-height: max-content;
+    border: solid rgb(66, 85, 145);
+    border-radius: 10px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: -3px;
+    margin-top: 20px;
+    background-color: rgb(121, 143, 216);
 }
 
 .lohn a{
     padding: 20px;
-    color: rgb(80, 101, 168);
+    color: rgb(34, 55, 123);
 }
 
+.submitBtn{
+    position: relative;
+    width: 164px;
+    overflow: hidden;
+    font-weight: normal;
+    color: black;
+    margin-left: -160px;
+    margin-bottom: 80px;
+    top: 75px;
+    left: -10px;
+    border: solid rgb(66, 85, 145);
+    border-radius: 10px;
+}
+
+.submitBtn:hover{
+    background-color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.lohnNum{
+    position: relative;
+    width: 90px;
+    font-weight: normal;
+    color: black;
+    margin-left: -160px;
+    margin-bottom: 80px;
+    top: 75px;
+    left: -260px;
+    border: solid rgb(66, 85, 145);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.ausgNum{
+    position: relative;
+    width: 115px;
+    font-weight: normal;
+    color: black;
+    margin-left: -10px;
+    margin-bottom: 80px;
+    top: 75px;
+    left: -200px;
+    border: solid rgb(66, 85, 145);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.lohnTxt{
+    position: relative;
+    color: black;
+    top: 50px;
+    left: -448px;
+}
+
+.ausgTxt{
+    position: relative;
+    color: black;
+    top: 50px;
+    left: -375px;
+}
+
+.erledigt{
+    background-color: rgb(53, 164, 22);
+    border: solid rgb(30, 100, 11);
+}
+
+.erledigt input{
+    border: solid rgb(30, 100, 11);
+}
+
+.erledigt button:hover{
+    background-color: rgb(108, 186, 86);
+    cursor: context-menu;
+}
+
+#kontoMenu{
+    position: absolute;
+    right: 100px;
+    height: 170px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border: solid rgb(66, 85, 145);
+    border-radius: 10px;
+    background-color: rgb(206, 213, 237);
+    visibility: hidden;
+    z-index: 3;
+}
+
+#altAusg{
+    max-width: max-content;
+}
+
+#altAusgTxt{
+    position: relative;
+    top: 10px;
+    left: 65px;
+    color: red;
+}
+
+#altAusgNum{
+    color: red;
+    position: relative;
+    width: 115px;
+    top: 10px;
+    left: 63px;
+    z-index: 2;
+}
+
+#altAusgBtn{
+    position: relative;
+    top: 15px;
+    left: 65px;
+    color: white;
+    padding: 3px;
+    border: solid white;
+    border-radius: 5px;
+    background-color: red;
+}
+
+#altAusgBtn:hover{
+    cursor: pointer;
+    background-color: rgb(209, 0, 0);
+}
+
+#resetBtn{
+    position: relative;
+    top: 110px;
+    left: -60px;
+    color: white;
+    border: solid white;
+    border-radius: 5px;
+    background-color: red;
+    z-index: 2;
+}
+
+#resetBtn:hover{
+    cursor: pointer;
+    background-color: rgb(209, 0, 0);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#auftrMenu{
+    visibility: hidden;
+    position: relative;
+    width: 280px;
+    height: 215px;
+    z-index: 2;
+    left: 20px;
+    border: solid rgb(66, 85, 145);
+    border-radius: 10px;
+    background-color: rgb(206, 213, 237);
+}
+
+#auftrStartTxt{
+    position: relative;
+}
+
+#auftrStart{
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+#auftrZielTxt{
+    position: relative;
+}
+
+#auftrZiel{
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+#auftrLohnTxt{
+    position: relative;
+    color: black;
+    left: 30px;
+}
+
+#auftrLohn{
+    position: relative;
+    color: black;
+    z-index: 2;
+    left: 25px;
+}
+
+#auftrAusgTxt{
+    position: relative;
+    color: black;
+    left: 30px;
+    top: 10px;
+}
+
+#auftrAusg{
+    position: relative;
+    color: black;
+    z-index: 2;
+    left: 25px;
+    top: 10px;
+}
+
+#auftrBtn{
+    position: relative;
+    color: black;
+    z-index: 2;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}

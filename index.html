@@ -7,32 +7,28 @@
 <header>
     <ul>
         <li><img id="logo" src="logo.png" height="30px"></li>
-        <li id="konto"><a id="kontoText">Kontostand: </a><a id="kontoStand">0</a><a> €</a></li>
+        <li id="konto" class="unselectable"><a id="kontoText">Kontostand: </a><a id="kontoStand">0</a><a> €</a></li>
     </ul>
 </header>
 <body>
-
+    <div id="kontoMenu">
+        <div id="altAusg"><a id="altAusgTxt">AUSGABEN</a><input type="number" id="altAusgNum" value="0"><button id="altAusgBtn">Bestätigen</button></div>
+        <div id="reset"><button id="resetBtn">Konto<br>Zurücksetzen</button></div>
+    </div>
+    <div id="auftrMenu">
+        <div id="auftr">
+            <a id="auftrStartTxt">🛫</a>
+            <input type="text" id="auftrStart">
+            <a id="auftrZielTxt">🏁</a>
+            <input type="text" id="auftrZiel">
+            <a id="auftrLohnTxt">LOHN</a>
+            <input type="number" id="auftrLohn" value="0">
+            <a id="auftrAusgTxt">AUSGABEN</a>
+            <input type="number" id="auftrAusg" value="0">
+            <button id="auftrBtn">Bestätigen</button></div>
+    </div>
     <input id="input-file" type=file accept="text/*"/>
     <div id="boxes"></div>
-    <div id="lohns"></div>
-<!--     <button id="resetBtn">RESET</button>
-
-<div id="mitarbeiterBox">
-    <a id="mitarbeiterText">Mitarbeiter</a>
-    <a id="mitarbeiter1">Arman</a>
-    <a id="mitarbeiter2">Gammos</a>
-</div>
-
-<div id="newBox">
-    <div id="startBox"><a>Start</a><a id="startText"></a></div>
-    <div id="zielBox"><a>Ziel</a><a id="zielText"></a></div>
-    <div id="lohnBox"><a>Lohn</a><input id="lohn" type="number" value="0" min="0"/></div>
-    <div id="ausgbBox"><a>Ausgaben</a><input id="ausgb" type="number" value="0" min="0"/></div>
-    <div id="submitBox"><button id="submitButton">Abschliessen</button></div>
-</div>
-
-<div id="moreBoxes"></div> -->
-
 
 </body>
 </html>
