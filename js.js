@@ -20,7 +20,8 @@ const fileInput = document.getElementById("input-file");
 fileInput.addEventListener("input", async (evt) => {
   const [ file ] = fileInput.files;
 
-  const text = await file.text();
+  var text = await file.text();
+  text = atob(text);
 
   const lines = text.split(/\r?\n/);
 
