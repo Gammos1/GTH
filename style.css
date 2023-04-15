@@ -238,26 +238,22 @@ li{
 
 #auftrStartTxt{
     position: relative;
-    visibility: hidden;
 }
 
 #auftrStart{
     position: relative;
     color: black;
     z-index: 2;
-    visibility: hidden;
 }
 
 #auftrZielTxt{
     position: relative;
-    visibility: hidden;
 }
 
 #auftrZiel{
     position: relative;
     color: black;
     z-index: 2;
-    visibility: hidden;
 }
 
 #auftrLohnTxt{
