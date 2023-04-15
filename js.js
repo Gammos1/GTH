@@ -356,33 +356,37 @@ document.getElementById("auftrBtn").onclick = function () {
       const lohnTxt = document.createElement("p");
       const ausgNum = document.createElement("input");
       const ausgTxt = document.createElement("p");
+      const resNum = document.createElement("input");
       lohnTxt.classList.add("lohnTxt");
       lohnTxt.innerHTML = "LOHN";
       ausgTxt.classList.add("ausgTxt");
       ausgTxt.innerHTML = "AUSGABEN";
-      lohnNum.type = "number";
+      lohnNum.type = "text";
       lohnNum.disabled = "disabled";
-      lohnNum.value = parseInt(document.getElementById("auftrLohn").value);
-      lohnNum.classList.add("lohnNum");
+      lohnNum.value = parseInt(document.getElementById("auftrLohn").value) + ' €';
+      lohnNum.classList.add("aufrtlohnNum");
       lohnNum.id = 'lohnNum' + newest;
-      ausgNum.type = "number";
+      ausgNum.type = "text";
       ausgNum.disabled = "disabled";
-      ausgNum.value = parseInt(document.getElementById("auftrAusg").value);
-      ausgNum.classList.add("ausgNum");
-      ausgNum.id = 'ausgNum' + newest;
+      ausgNum.value = '-' + parseInt(document.getElementById("auftrAusg").value) + ' €';
+      ausgNum.classList.add("aufrtAusgNum");
+      resNum.type = "text";
+      resNum.disabled = "disabled";
+      resNum.value = parseInt(document.getElementById("auftrLohn").value) - parseInt(document.getElementById("auftrAusg").value) + ' €';
+      resNum.classList.add("aufrtresNum");
 
-      newBoxStart.innerHTML = "🛫" + document.getElementById("auftrStart").value;
-      newBoxZiel.innerHTML = "🏁" + document.getElementById("auftrZiel").value;
       innerBox.id = "innerBox";
 
       newBox.classList.add("lohn");
-      innerBox.appendChild(newBoxStart);
-      innerBox.appendChild(newBoxZiel);
+      newBox.classList.add("erledigt");
+      // innerBox.appendChild(newBoxStart);
+      // innerBox.appendChild(newBoxZiel);
       newBox.appendChild(innerBox);
       newBox.appendChild(lohnNum);
       newBox.appendChild(ausgNum);
-      newBox.appendChild(lohnTxt);
-      newBox.appendChild(ausgTxt);
+      newBox.appendChild(resNum);
+      // newBox.appendChild(lohnTxt);
+      // newBox.appendChild(ausgTxt);
       document.getElementById("boxes").appendChild(newBox);
 
     }
