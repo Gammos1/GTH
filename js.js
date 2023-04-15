@@ -4,41 +4,41 @@
 // }
 // document.getElementById("money").innerHTML = money.toLocaleString("en-US");
 
-let lohns = new Array(0);
-let starts = new Array(0);
-let ziels = new Array(0);
+// let lohns = new Array(0);
+// let starts = new Array(0);
+// let ziels = new Array(0);
 
-if(localStorage.getItem('lohns') != null) {
-  let lohnts = localStorage.getItem('lohns');
-}
-if(localStorage.getItem('starts') != null) {
-  let lohnts = localStorage.getItem('starts');
-}
-if(localStorage.getItem('ziels') != null) {
-  let lohnts = localStorage.getItem('ziels');
-}
+// if(localStorage.getItem('lohns') != null) {
+//   lohns = localStorage.getItem('lohns');
+// }
+// if(localStorage.getItem('starts') != null) {
+//   starts = localStorage.getItem('starts');
+// }
+// if(localStorage.getItem('ziels') != null) {
+//   ziels = localStorage.getItem('ziels');
+// }
 
-for(var i = 0; i < lohns.length; i++) {
-  if(lohns[i] == "undefined") {
-    i = lohns.length;
-  }
-  const newBox = document.createElement("div");
-  const innerBox = document.createElement("div");
-  const newBoxLohn = document.createElement("a");
-  const newBoxStart = document.createElement("a");
-  const newBoxZiel = document.createElement("a");
-  newBoxLohn.innerHTML = lohns[i] + " €";
-  newBoxStart.innerHTML = "🛫" + starts[i];
-  newBoxZiel.innerHTML = "🏁" + ziels[i];
-  innerBox.id = "innerBox";
-  newBox.id = "lohn" + i;
-  newBox.classList.add("lohn");
-  innerBox.appendChild(newBoxLohn);
-  innerBox.appendChild(newBoxStart);
-  innerBox.appendChild(newBoxZiel);
-  newBox.appendChild(innerBox);
-  document.getElementById("lohns").appendChild(newBox);
-}
+// for(var i = 0; i < starts.length; i++) {
+//   if(lohns[i] == "undefined") {
+//     i = lohns.length;
+//   }
+//   const newBox = document.createElement("div");
+//   const innerBox = document.createElement("div");
+//   const newBoxLohn = document.createElement("a");
+//   const newBoxStart = document.createElement("a");
+//   const newBoxZiel = document.createElement("a");
+//   newBoxLohn.innerHTML = lohns[i] + " €";
+//   newBoxStart.innerHTML = "🛫" + starts[i];
+//   newBoxZiel.innerHTML = "🏁" + ziels[i];
+//   innerBox.id = "innerBox";
+//   newBox.id = "lohn" + i;
+//   newBox.classList.add("lohn");
+//   innerBox.appendChild(newBoxLohn);
+//   innerBox.appendChild(newBoxStart);
+//   innerBox.appendChild(newBoxZiel);
+//   newBox.appendChild(innerBox);
+//   document.getElementById("lohns").appendChild(newBox);
+// }
 
 const fileInput = document.getElementById("input-file");
 fileInput.addEventListener("input", async (evt) => {
@@ -52,41 +52,15 @@ fileInput.addEventListener("input", async (evt) => {
   ziels.push(lines[1]);
 
   localStorage.setItem('lohns', lohns);
+  localStorage.setItem('starts', starts);
   localStorage.setItem('ziels', ziels);
 
-  if(localStorage.getItem('lohns') != null) {
-    let lohnts = localStorage.getItem('lohns');
-  }
-  if(localStorage.getItem('starts') != null) {
-    let lohnts = localStorage.getItem('starts');
-  }
-  if(localStorage.getItem('ziels') != null) {
-    let lohnts = localStorage.getItem('ziels');
-  }
-  
-  for(var i = 0; i < lohns.length; i++) {
-    if(lohns[i] == "undefined") {
-      i = lohns.length;
-    }
-    const newBox = document.createElement("div");
-    const innerBox = document.createElement("div");
-    const newBoxLohn = document.createElement("a");
-    const newBoxStart = document.createElement("a");
-    const newBoxZiel = document.createElement("a");
-    newBoxLohn.innerHTML = lohns[i] + " €";
-    newBoxStart.innerHTML = "🛫" + starts[i];
-    newBoxZiel.innerHTML = "🏁" + ziels[i];
-    innerBox.id = "innerBox";
-    newBox.id = "lohn" + i;
-    newBox.classList.add("lohn");
-    innerBox.appendChild(newBoxLohn);
-    innerBox.appendChild(newBoxStart);
-    innerBox.appendChild(newBoxZiel);
-    newBox.appendChild(innerBox);
-    document.getElementById("lohns").appendChild(newBox);
-  }
+  console.log(lohns);
+  console.log(starts);
+  console.log(ziels);
 
-  // location.reload();
+  location.reload();
+  console.log("reload");
 
   // document.getElementById("startText").innerHTML = lines[0];
   // document.getElementById("zielText").innerHTML = lines[1];
