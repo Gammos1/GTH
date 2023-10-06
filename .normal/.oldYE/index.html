@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type=module src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+
+<ul>
+    <li><a id="firmaName">STAG</a></li>
+    <li id="kontostandText"><a>Kontostand: </a><a id="money">0</a><a> €</a></li>
+</ul>
+</header>
+<body>
+
+    <input id="input-file" type=file accept="text/*"/>
+    <button id="resetBtn">RESET</button>
+
+<div id="mitarbeiterBox">
+    <a id="mitarbeiterText">Mitarbeiter</a>
+    <a id="mitarbeiter1">Arman</a>
+    <a id="mitarbeiter2">Gammos</a>
+</div>
+
+<div id="newBox">
+    <div id="startBox"><a>Start</a><a id="startText"></a></div>
+    <div id="zielBox"><a>Ziel</a><a id="zielText"></a></div>
+    <div id="lohnBox"><a>Lohn</a><input id="lohn" type="number" value="0" min="0"/></div>
+    <div id="ausgbBox"><a>Ausgaben</a><input id="ausgb" type="number" value="0" min="0"/></div>
+    <div id="submitBox"><button id="submitButton">Abschliessen</button></div>
+</div>
+
+<div id="oldStuff"></div>
+
+
+</body>
+</html>

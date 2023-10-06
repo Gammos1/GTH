@@ -1,0 +1,267 @@
+* {
+    font-family: Monaco, Arial, Monospace;
+    color: rgb(77, 77, 77);
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+header{
+    z-index: 2;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background-color: rgb(245, 245, 245);
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#logo_png {
+    border: none;
+    border-radius: 999px;
+    margin-left: 10px;
+    float: left;
+}
+
+#logo_text {
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -35px;
+}
+
+.logo a {
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+#menu_home {
+    margin-left: 30px;
+}
+
+.menu {
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    transform-origin: center;
+    transition: 200ms;
+    scale: 1.0;
+    float: right;
+    margin-right: 50px;
+}
+
+#socials_eluant {
+    border: rgb(217, 217, 217) solid;
+    border-radius: 15px;
+}
+
+.socials:hover {
+    transform-origin: center;
+    scale: 1.2;
+}
+
+.buttons{
+    padding-top: 10px;
+}
+
+.headline{
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#winged{
+    transition: 200ms;
+    scale: 1.0;
+    cursor: pointer;
+    margin: auto;
+    width: 700px;
+    height: 250px;
+    background-color: rgb(237, 237, 237);
+    margin-top: 100px;
+    border: rgb(237, 237, 237) solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 50px 1px grey;
+}
+
+#juicy{
+    transition: 200ms;
+    scale: 1.0;
+    cursor: pointer;
+    margin: auto;
+    width: 700px;
+    height: 250px;
+    background-color: rgb(198, 199, 199);
+    margin-top: 100px;
+    border: rgb(237, 237, 237) solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 50px 1px grey;
+}
+
+#lvlup{
+    transition: 200ms;
+    scale: 1.0;
+    cursor: pointer;
+    margin: auto;
+    width: 700px;
+    height: 250px;
+    background-color: rgb(237, 237, 237);
+    margin-top: 100px;
+    border: rgb(237, 237, 237) solid;
+    border-radius: 7px;
+    box-shadow: 10px 10px 50px 1px grey;
+}
+
+#protect{
+    transition: 200ms;
+    scale: 1.0;
+    cursor: pointer;
+    margin: auto;
+    width: 700px;
+    height: 250px;
+    background-color: rgb(237, 237, 237);
+    margin-top: 100px;
+    border: rgb(237, 237, 237) solid;
+    border-radius: 7px;
+    box-shadow: 10px 10px 50px 1px grey;
+}
+
+#winged:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+#juicy:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+#protect:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+#lvlup:hover {
+    transform-origin: center;
+    scale: 1.05;
+}
+
+.project_box .title{
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.title{
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.project_box .title:hover{
+    text-decoration: underline;
+}
+
+#lvlup img{
+    float: left;
+    margin-top: 62px;
+    margin-left: 20px;
+}
+
+#winged img{
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: rgb(237, 237, 237) solid;
+    border-radius: 7px;
+}
+
+#juicy img{
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+#protect img{
+    float: left;
+    margin-top: 62px;
+    margin-left: 20px;
+}
+
+.desc{
+    margin-left: 350px;
+    margin-top: 60px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#lvlup .project_stats{
+    float: right;
+    margin-right: 18px;
+    margin-top: 58px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#winged .project_stats{
+    float: right;
+    margin-right: 18px;
+    margin-top: 110px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#juicy .project_stats{
+    float: right;
+    margin-right: 18px;
+    margin-top: 75px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#protect .project_stats{
+    float: right;
+    margin-right: 18px;
+    margin-top: 58px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: light;
+}
+
+#eluant_2{
+    border: rgb(217, 217, 217) solid;
+    border-radius: 15px;
+}
+
+.link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#selected_page{
+    text-decoration: underline;
+}
