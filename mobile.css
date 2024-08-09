@@ -1,6 +1,6 @@
 * {
     font-family: Monaco, Arial, Monospace;
-    color: rgb(77, 77, 77);
+    color: white;
     padding: 0;
     margin: 0;
     z-index: 1;
@@ -11,7 +11,13 @@ header{
     width: 100%;
     height: 75px;
     position: fixed;
-    background-color: #eeefee;
+    background-color: rgb(36, 36, 36);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(77, 77, 77);
 }
 
 .logo {

@@ -1,9 +1,10 @@
 * {
     font-family: Monaco, Arial, Monospace;
-    color: rgb(77, 77, 77);
+    color: white;
     padding: 0;
     margin: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 header{
@@ -11,7 +12,14 @@ header{
     width: 100%;
     height: 75px;
     position: fixed;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(36, 36, 36);
+    border-bottom: solid 5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(77, 77, 77);
 }
 
 .logo {
@@ -77,62 +85,94 @@ header{
     text-align: center;
     width: 100%;
     margin-top: 100px;
+    position: absolute;
+}
+
+.headline h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.headline h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projects{
+    justify-content: center;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    height: 1000px;
 }
 
 #winged{
+    text-align: center;
     transition: 200ms;
     scale: 1.0;
     cursor: pointer;
     margin: auto;
-    width: 700px;
+    width: 250px;
     height: 250px;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(36, 36, 36);
     margin-top: 100px;
-    border: rgb(237, 237, 237) solid;
-    border-radius: 15px;
-    box-shadow: 10px 10px 50px 1px grey;
+    border: rgb(36, 36, 36) solid;
+    border-radius: 7px;
+    box-shadow: 10px 10px 50px 1px black;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
 #juicy{
+    text-align: center;
     transition: 200ms;
     scale: 1.0;
     cursor: pointer;
     margin: auto;
-    width: 700px;
+    width: 250px;
     height: 250px;
-    background-color: rgb(198, 199, 199);
+    background-color: rgb(36, 36, 36);
     margin-top: 100px;
-    border: rgb(237, 237, 237) solid;
-    border-radius: 15px;
-    box-shadow: 10px 10px 50px 1px grey;
+    border: rgb(36, 36, 36) solid;
+    border-radius: 7px;
+    box-shadow: 10px 10px 50px 1px black;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
 #lvlup{
+    text-align: center;
     transition: 200ms;
     scale: 1.0;
     cursor: pointer;
     margin: auto;
-    width: 700px;
+    width: 250px;
     height: 250px;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(36, 36, 36);
     margin-top: 100px;
-    border: rgb(237, 237, 237) solid;
+    border: rgb(36, 36, 36) solid;
     border-radius: 7px;
-    box-shadow: 10px 10px 50px 1px grey;
+    box-shadow: 10px 10px 50px 1px black;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
 #protect{
+    text-align: center;
     transition: 200ms;
     scale: 1.0;
     cursor: pointer;
     margin: auto;
-    width: 700px;
+    width: 250px;
     height: 250px;
-    background-color: rgb(237, 237, 237);
+    margin-left: 55px;
+    margin-right: 55px;
+    background-color: rgb(36, 36, 36);
     margin-top: 100px;
-    border: rgb(237, 237, 237) solid;
+    border: rgb(36, 36, 36) solid;
     border-radius: 7px;
-    box-shadow: 10px 10px 50px 1px grey;
+    box-shadow: 10px 10px 50px 1px black;
 }
 
 #winged:hover {
@@ -155,102 +195,78 @@ header{
     scale: 1.05;
 }
 
-.project_box .title{
-    float: left;
-    margin-left: 20px;
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 25px;
-    text-decoration: none;
-}
-
 .title{
-    float: left;
-    margin-left: 20px;
-    margin-top: 15px;
+    padding-top: 115px;
     font-weight: bold;
     font-size: 25px;
     text-decoration: none;
     color: white;
 }
 
-.project_box .title:hover{
-    text-decoration: underline;
-}
-
-#lvlup img{
-    float: left;
-    margin-top: 62px;
-    margin-left: 20px;
-}
-
-#winged img{
-    float: left;
-    margin-top: 40px;
-    margin-left: 20px;
-    border: rgb(237, 237, 237) solid;
-    border-radius: 7px;
-}
-
-#juicy img{
-    float: left;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-#protect img{
-    float: left;
-    margin-top: 62px;
-    margin-left: 20px;
-}
-
 .desc{
-    margin-left: 350px;
-    margin-top: 60px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    max-width: 230px;
     font-size: 15px;
     text-decoration: none;
     font-weight: light;
 }
 
-#lvlup .project_stats{
-    float: right;
-    margin-right: 18px;
-    margin-top: 58px;
+.project_stats{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     font-size: 12px;
     text-decoration: none;
     font-weight: light;
 }
 
-#winged .project_stats{
-    float: right;
-    margin-right: 18px;
-    margin-top: 110px;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: light;
+#lvlup img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    object-fit: cover;
+    width: 240px;
+    border-radius: 7px;
 }
 
-#juicy .project_stats{
-    float: right;
-    margin-right: 18px;
-    margin-top: 75px;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: light;
+#winged img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    object-fit: cover;
+    object-position: 100% 0%;
+    width: 240px;
+    max-height: 97px;
+    border-radius: 7px;
 }
 
-#protect .project_stats{
-    float: right;
-    margin-right: 18px;
-    margin-top: 58px;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: light;
+#juicy img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    object-fit: cover;
+    width: 240px;
+    border-radius: 7px;
+}
+
+#protect img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    object-fit: cover;
+    width: 240px;
+    border-radius: 7px;
 }
 
 #eluant_2{
+    object-fit:contain;
+    margin-top: 135px;
+    max-height: 1px;
     border: rgb(217, 217, 217) solid;
     border-radius: 15px;
+    scale: 0.8;
 }
 
 .link{
@@ -264,4 +280,14 @@ header{
 
 #selected_page{
     text-decoration: underline;
+}
+
+.mc_image{
+    filter: brightness(50%);
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 1500px;
+    object-fit: cover;
+    padding-top: 50px;
 }
