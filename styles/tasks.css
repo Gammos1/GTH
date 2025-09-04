@@ -2,15 +2,14 @@
     font-family: Monaco, Arial, Monospace;
     padding: 0;
     margin: 0;
-    z-index: 1;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: rgb(25, 214, 220);
 }
 
 header {
     height: 50px;
+    background-color: rgb(25, 214, 220);
+}
+
+body {
     background-color: rgb(25, 214, 220);
 }
 
@@ -40,12 +39,19 @@ button:hover {
 }
 
 .box {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     color: black;
     padding: 15px;
     margin: 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box > * {
+    padding: 5px;
 }
 
 .box-container {
