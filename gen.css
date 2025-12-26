@@ -1,0 +1,18 @@
+*{
+    color: red;
+    font-size: 10px;
+    padding: 40px;
+}
+body {
+    align-items: center;
+    justify-content: center;
+}
+.input_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#output {
+    width: 80%;
+}
