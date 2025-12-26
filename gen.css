@@ -1,11 +1,22 @@
+@font-face {
+    font-family: minecraftRegular;
+    src: url(assets/MinecraftDefault-Regular.ttf);
+}
+@font-face {
+    font-family: minecraftItalic;
+    src: url(assets/MinecraftDefault-Italic.ttf);
+}
+
 *{
     color: red;
-    font-size: 10px;
-    padding: 40px;
+    font-size: 20px;
+    overflow: hidden;
 }
+
 body {
     align-items: center;
     justify-content: center;
+    background-color: #9a9da0;
 }
 .input_area {
     display: flex;
@@ -13,6 +24,31 @@ body {
     justify-content: center;
 }
 
+#input {
+    resize: none;
+    background-color: rgba(255,255,255,0);
+    border: none;
+    font-family: minecraftItalic;
+    color: #927359;
+    text-align: center;
+    font-size: 30px;
+}
+
 #output {
-    width: 80%;
+    position: fixed;
+    width: 70%;
+    height: 90px;
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+}
+
+#image {
+    z-index: -1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -85%);
 }
