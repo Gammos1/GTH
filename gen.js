@@ -3,7 +3,7 @@ function readLines() {
     const lines = textArea.value.split('\n');
     console.log(lines);
     for (i = 0; i < 15; i++) {
-        if (i == 1 || i == 2) {
+        if (i == 0 || i == 1 || i == 2) {
             if(lines[i] == '' || lines[i] == undefined) {
                 lines[i] = '\\n';
             }
