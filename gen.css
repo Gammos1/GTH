@@ -34,6 +34,14 @@ body {
     font-size: 30px;
 }
 
+#input_image {
+    position: absolute;
+    top: 75%;
+    font-family: minecraftRegular;
+    color: #927359;
+    text-align: center;
+}
+
 #output {
     position: fixed;
     width: 70%;
@@ -42,7 +50,7 @@ body {
     color: rgb(75, 75, 75);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 310%);
 }
 
 #image {

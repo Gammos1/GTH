@@ -15,6 +15,7 @@ function readLines() {
     }
     console.log(lines);
     document.getElementById('output').value = '{title:"' + lines[0] + lines[1] + lines[2] + '",page_content:["' + lines[3] + '\\n","' + lines[4] + '\\n","' + lines[5] + '\\n","' + lines[6] + '\\n","' + lines[7] + '\\n","' + lines[8] + '\\n","' + lines[9] + '\\n","' + lines[10] + '\\n","' + lines[11] + '\\n","' + lines[12] + '\\n","' + lines[13] + '\\n","' + lines[14] + '\\n"' + ']}';
+    if (document.getElementById('input_image').value != '') document.getElementById('output').value = '{title:"' + lines[0] + lines[1] + lines[2] + '",page_content:["' + lines[3] + '\\n","' + lines[4] + '\\n","' + lines[5] + '\\n","' + lines[6] + '\\n","' + lines[7] + '\\n","' + lines[8] + '\\n","' + lines[9] + '\\n","' + lines[10] + '\\n","' + lines[11] + '\\n","' + lines[12] + '\\n","' + lines[13] + '\\n","' + lines[14] + '\\n"' + '],image:"' + document.getElementById('input_image').value + '"}';
 }
 
 
