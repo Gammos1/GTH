@@ -11,17 +11,43 @@
     color: red;
     font-size: 20px;
     overflow: hidden;
+    padding: 0;
+}
+
+#title {
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: minecraftRegular;
+    font-size: 2vw;
+    color: #faf5e8;
+}
+
+#version {
+    font-family: minecraftRegular;
+    font-size: 1.4vw;
+    color: yellow;
+    rotate: -30deg;
+    position: absolute;
+    left: 58.5%;
+    top: 6%;
 }
 
 body {
     align-items: center;
     justify-content: center;
-    background-color: #9a9da0;
+    background-color: #181818;
 }
+
 .input_area {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: rgba(255, 0, 0, 0.384); */
+    margin-top: 8vw;
+    height: 30vw;
 }
 
 #input {
@@ -31,33 +57,128 @@ body {
     font-family: minecraftItalic;
     color: #927359;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.6vw;
+    /* background-color: rgba(0, 255, 0, 0.384); */
+    width: 15.625vw;
+    height: 21.875vw;
+    position: relative;
+    top: -1vw;
 }
 
 #input_image {
     position: absolute;
-    top: 75%;
-    font-family: minecraftRegular;
-    color: #927359;
-    text-align: center;
+    border-width: 0.1vw;
+    font-size: 0.94vw;
+    background-color: #1f1f1f;
+    resize: none;
+    color:#b5c180;
+    top: 1.5vw;
+    left: 70vw;
 }
 
 #output {
-    position: fixed;
-    width: 70%;
-    height: 90px;
-    font-size: 20px;
-    color: rgb(75, 75, 75);
-    top: 50%;
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, 310%);
+    transform: translate(-50%,0);
+    width: 95%;
+    height: 8vw;
+    font-size: 0.94vw;
+    color:#b5c180;
+    overflow-y: scroll;
+    background-color: #1f1f1f;
 }
 
 #image {
     z-index: -1;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -85%);
+    position: absolute;
     image-rendering: pixelated;
+    width: 23.438vw;
+}
+
+#seperator {
+    image-rendering: pixelated;
+    position: absolute;
+    width: 11vw;
+    top: 5vw;
+    filter: brightness(60%);
+    user-select: none;
+}
+
+#image_placeholder {
+    position: absolute;
+    top: 13.9vw;
+    background-color: #927359;
+    height: 11vw;
+    width: 15.625vw;
+    z-index: -5;
+}
+
+#placeholder_text {
+    font-family: minecraftRegular;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translate(0,-150%);
+    font-size: 3vw;
+    color:#181818;
+    /* rotate: -45deg; */
+}
+
+#info_more {
+    position: absolute;
+    top: 11.5vw;
+    left: 65vw;
+}
+
+.info_line {
+    padding-top: 0.07vw;
+    margin: 0;
+    display: block;
+    height: 1.4vw;
+    width: 30vw;
+}
+
+.info_piece {
+    /* margin: 0.1vw; */
+    border-width: 0.1vw;
+    font-size: 0.94vw;
+    background-color: #1f1f1f;
+    resize: none;
+    color:#b5c180;
+}
+
+.info_type {
+    width: 5vw;
+}
+
+.info_color {
+    width: 4vw;
+    text-align: center;
+}
+
+/* 
+
+Shadowforms
+-----------
+Some shadowforms've
+different outward
+appearences than
+others, so be
+careful! 
+bla
+bla
+bla
+
+
+*/
+
+
+.noselect {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }

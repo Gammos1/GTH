@@ -5,20 +5,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="gen.css">
         <script src="gen.js"></script>
-        <title>Page Generator</title>
+        <title>Noxicon Generator v0.2.0</title>
     </head>
     <body>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <p id="title">Noxicon Page Generator</p>
+        <p id="version">v0.2.0</p>
         <div class="input_area">
-            <textarea id="input" rows="15" cols="20" onchange="readLines()" onkeyup="readLines()" onkeydown="return limitLines(this, event)"></textarea>
-            <textarea id="input_image" rows="1" cols="20" onchange="readLines()" onkeyup="readLines()" placeholder="image here"></textarea>
+            <image id="image" src="assets/book.png"></image>
+            <textarea id="input" rows="15" cols="20" onchange="readLines()" onkeyup="readLines()"></textarea>
+            <textarea id="input_image" rows="1" cols="20" onchange="readLines()" onkeyup="readLines()" placeholder="\uImage"></textarea>
+             <div id="image_placeholder">
+                <p id="placeholder_text">IMAGE</p>
+             </div>
+             <image id="seperator" class="noselect" src="assets/seperator.png"></image>
         </div>
-        <image id="image" src="assets/book.png"></image>
-        <textarea id="output" disabled>{title:"\n\n\n",page_content:["\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n"]}</textarea>
+        <div id="info_more">
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00001" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00011" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00021" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00002" onkeyup="readLines()">translate</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00012" onkeyup="readLines()">noxicon:pages</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00022" onkeyup="readLines()">#e5d7b9</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00003" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00013" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00023" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00004" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00014" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00024" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00005" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00015" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00025" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00006" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00016" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00026" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00007" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00017" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00027" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00008" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00018" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00028" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="00009" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="00019" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="00029" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="000010" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="000110" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="000210" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="000011" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="000111" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="000211" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="000012" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="000112" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="000212" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="000013" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="000113" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="000213" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="000014" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="000114" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="000214" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+            <div class="info_line">
+                <textarea class="info_type info_piece" placeholder="text type" rows="1" id="000015" onkeyup="readLines()">text</textarea>
+                <textarea class="info_font info_piece" placeholder="font" rows="1" id="000115" onkeyup="readLines()">noxicon:body_text</textarea>
+                <textarea class="info_color info_piece" placeholder="colour"  rows="1" id="000215" onkeyup="readLines()">#bfaa8c</textarea>
+            </div>
+        </div>
+        <textarea id="output" disabled>{page_content:[{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:false},{translate:"noxicon.sforms.seperator",font:"noxicon:pages",color:"#e5d7b9",shadow_color:0,italic:false},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true},{text:"\n",font:"noxicon:body_text",color:"#bfaa8c",shadow_color:0,italic:true}]}</textarea>
     </body>
 </html>
